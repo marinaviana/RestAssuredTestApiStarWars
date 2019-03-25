@@ -1,0 +1,83 @@
+{
+  "required": [
+    "name",
+    "rotation_period",
+    "orbital_period",
+    "diameter",
+    "climate",
+    "gravity",
+    "terrain",
+    "surface_water",
+    "population",
+    "residents",
+    "films",
+    "created",
+    "edited",
+    "url"
+  ],
+  "description": "A planet.",
+  "title": "Planet",
+  "properties": {
+    "terrain": {
+      "description": "the terrain of this planet. Comma-seperated if diverse.",
+      "type": "string"
+    },
+    "created": {
+      "description": "The ISO 8601 date format of the time that this resource was created.",
+      "pattern": "^(-?(?:[1-9][0-9]*)?[0-9]{4})-(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9])T(2[0-3]|[01][0-9]):([0-5][0-9]):([0-5][0-9])(.[0-9]+)?(Z)?$",
+      "type": "string"
+    },
+    "films": {
+      "description": "An array of Film URL Resources that this planet has appeared in.",
+      "type": "array"
+    },
+    "rotation_period": {
+      "description": "The number of standard hours it takes for this planet to complete a single rotation on its axis.",
+      "type": "string"
+    },
+    "population": {
+      "description": "The average populationof sentient beings inhabiting this planet.",
+      "type": "string"
+    },
+    "url": {
+      "description": "The hypermedia URL of this resource.",
+      "format": "uri",
+      "type": "string"
+    },
+    "orbital_period": {
+      "description": "The number of standard days it takes for this planet to complete a single orbit of its local star.",
+      "type": "string"
+    },
+    "surface_water": {
+      "description": "The percentage of the planet surface that is naturally occuring water or bodies of water.",
+      "type": "string"
+    },
+    "edited": {
+      "description": "the ISO 8601 date format of the time that this resource was edited.",
+      "pattern": "^(-?(?:[1-9][0-9]*)?[0-9]{4})-(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9])T(2[0-3]|[01][0-9]):([0-5][0-9]):([0-5][0-9])(.[0-9]+)?(Z)?$",
+      "type": "string"
+    },
+    "gravity": {
+      "description": "A number denoting the gravity of this planet. Where 1 is normal.",
+      "type": "string"
+    },
+    "name": {
+      "description": "The name of this planet.",
+      "type": "string"
+    },
+    "climate": {
+      "description": "The climate of this planet. Comma-seperated if diverse.",
+      "type": "string"
+    },
+    "residents": {
+      "description": "An array of People URL Resources that live on this planet.",
+      "type": "array"
+    },
+    "diameter": {
+      "description": "The diameter of this planet in kilometers.",
+      "type": "string"
+    }
+  },
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "type": "object"
+}
